@@ -1,0 +1,90 @@
+<aside class="aside">
+   
+  <article class="product-name">
+      <h4>NEW RELEASE</h4>
+      <h2>MOMENTUM True Wireless 2</h2>
+      <h3>Earbuds that put sou Cop</h3>
+    </article>
+
+    <article class="product-price">
+      <h4>STARTING AT</h4>
+      <h2>$295.95</h2>
+    </article>
+
+    <section class="nav-products section-content">
+      <nav >
+        <a class="nav-class tab-view" *ngFor="let item of navItems; index as i" [class.active]="valor == i" (click)="selectttab(item, i)">{{item.des}}</a>
+      </nav>
+      <section>
+        <article>
+          <p class="" [innerHtml]=navContent[valueTabs]></p>
+        </article>
+      </section>
+    </section>
+
+    <section class="section-content">
+      <h3>Choose your finish.</h3>
+      <div  class="section-choose">
+      <article *ngFor="let item of modelList; let i = index"  (click)="selectedModel = item"   [class.selected]="selectedModel.id == i" class="choose-section card-choose">
+        <h5>{{item.title}}</h5>
+        <p>{{item.description}} </p>
+      </article>
+    </div>
+    </section>
+
+    <section  class="section-content">
+      <h3>Would you like to add extended warranty coverage?.</h3>
+      
+      <article *ngFor="let item of warrantyList; let i = index"  (click)="setPriceWarranty(item)"   [class.selected]="selectedWarranty.id == i" class="warranty-section card-choose">
+        <div >
+        <h5>{{item.years}}</h5>
+        <p>{{item.description}}</p>
+      </div>
+        <span *ngIf="item.price" style="float: right;">+ ${{item.price}}</span>
+      </article>
+    </section>
+
+    <section class="section-content"> 
+      <h3>Features</h3>
+      <article  *ngFor="let item of featuresList; let i = index"  (click)="setPriceFeature(item)"   [class.selected]="selectedFeature.id == i" class="warranty-section card-choose">
+        <h5>{{item.feature}}</h5>
+        <span  style="float: right;" *ngIf="item.price">+ ${{item.price}}</span>
+      </article>
+ 
+    </section>
+
+    <section class="section-content section-specification">
+      <h3>Specifications.</h3>
+      <ul>
+        <li>
+          <span >Dimension</span>
+          <p>76.8 x 43.8 x 34.7 mm (earbuds and charging case)</p>
+        </li>
+
+        <li>
+          <span>USB Standard</span>
+          <p>USB-C</p>
+        </li>
+        <li>
+          <span>Power supply</span>
+          <p>Sennheiser 7mm dynamic driver</p>
+        </li>
+    
+        <li>
+          <span>Frequency response (Microphone)</span>
+          <p>100 Hz to 10 kHz</p>
+        </li>
+
+        <li>
+          <span>Frequency response</span>
+          <p>5 - 21,000 Hz</p>
+        </li>
+
+        <li>
+          <span>Noise cancellation</span>
+          <p>Single-Mic ANC per earbud side</p>
+        </li>
+      </ul>
+    
+    </section>
+  </aside>

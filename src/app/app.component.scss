@@ -1,0 +1,45 @@
+
+
+  .main-container {
+
+    display: grid;
+  
+    grid-template-columns: 5rem auto auto 5rem;
+  
+    grid-template-rows: auto;
+  
+    grid-template-areas:
+  
+      '. header header .'
+  
+      '. main aside .'
+  
+      'footer footer footer footer';
+  
+    column-gap: 2rem;
+    row-gap: 3rem;
+  }
+
+  app-product-main{
+    grid-area: main;
+    max-width: 100%;
+
+   // padding-bottom: 11rem;
+  }
+
+  app-header{
+    grid-area: header;
+  }
+
+  app-footer{
+    position: fixed;
+    bottom: 0;
+    grid-area: footer;
+    width: 100%;
+  
+  }
+
+  app-aside{
+    grid-area: aside;
+    padding-bottom: 11rem;
+  }

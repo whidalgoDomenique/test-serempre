@@ -1,0 +1,29 @@
+<main class="main">
+
+    <section class="normal-flex-ccc" style="width: 100%;">
+      
+      <figure class="border-main-image ta-center">
+        <img class="main-image" [src]="selectedProduct.image" alt="" />
+        <figcaption></figcaption>
+      </figure>
+
+      <section class="normal-flex-rcc product-list">
+        <figure (click)="selectedProduct = item" *ngFor="let item of productsList; let i = index" [class.selected]="selectedProduct.id == i" class="border-second-images ta-center">
+          <img class="secondary-image" [src]="item.image" alt="" />
+          <figcaption></figcaption>
+        </figure>
+    
+      </section>
+
+      <section class="ta-center product-features">
+        <figure *ngFor="let item of selectedProduct.features">
+          <img [src]="item.image" alt="" />
+          <figcaption class="text-info">{{item.label}}</figcaption>
+        </figure>
+
+      </section>
+
+    </section>
+
+  </main>
+  

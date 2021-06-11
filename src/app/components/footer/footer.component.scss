@@ -1,0 +1,50 @@
+
+.footer{
+    border-top: 1px solid rgba(210, 210, 215);
+    padding: 2.5rem 7rem;
+    background-color: rgba(245, 245, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div{
+        column-gap: 2rem;
+    }
+
+    h4{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        color: rgba(17, 17, 17);
+
+    }
+    p{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(107, 114, 128);
+    }
+}
+
+.section-article{
+    max-width: 17.5rem;
+    h2{
+        text-align: right;
+    }
+}
+
+.class-button{
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    padding: 1rem 1.5rem ;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 16px;
+    &:focus{
+        border: 2px solid rgba(182, 188, 198);
+    }
+}
+

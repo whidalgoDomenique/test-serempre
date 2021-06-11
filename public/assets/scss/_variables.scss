@@ -1,0 +1,41 @@
+
+$bg-primary: rgba(30, 150, 212, 1);
+
+$bg-primary-hover: rgba(102, 190, 235,1);
+$bg-primary-focus: rgba(30, 150, 212,1);
+
+
+$bg-secondary: rgba(238, 239, 242,1);
+$bg-warning: rgba(30, 150, 212,1);
+$bg-danger: rgba(30, 150, 212,1);
+$bg-light: rgba(255, 255, 255);
+$bg-dark: rgba(19, 20, 21);
+
+.bg-primary {
+  background-color: $bg-primary;
+  color: $bg-light;
+}
+.bg-primary:hover {
+  background-color: $bg-primary-hover;
+  color:  $bg-light;
+}
+.bg-primary:focus {
+  background-color: $bg-primary-focus;
+  color:  $bg-light;
+}
+
+
+.bg-primary-gradient {
+  background: $bg-primary;
+  background: linear-gradient(
+    117deg,
+    rgba(2, 0, 36, 0.8) 0%,
+    rgba(83, 110, 29, 0.8) 5%,
+    rgba(148, 193, 65, 0.4) 48%,
+    rgba(80, 114, 37, 0.8) 89%,
+    rgba(0, 212, 255, 0.5) 98%
+  );
+}
+.bg-primary-400 {
+//  background-color: $bg-primary;
+}

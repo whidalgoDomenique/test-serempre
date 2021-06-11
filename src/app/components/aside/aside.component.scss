@@ -1,0 +1,154 @@
+.product-name{
+    h4{
+        color: rgba(203, 37, 60);
+        font-size: 13.33px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 1px;
+      
+    }
+    h2{
+        color: rgba(17, 17, 17);
+        font-size: 39.81px;
+        font-weight: bold;
+        line-height: 48px;
+ 
+    }
+    h3{
+        color: rgba(107, 114, 128);
+        font-size: 27.65px;
+        font-weight: normal;
+        line-height: 32px;
+    }
+}
+.nav-products{
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgba(107, 114, 128);
+    line-height: 24px;
+
+}
+.product-price{
+    padding: 3rem 0 1rem 0;
+    h4{
+        color: rgba(107, 114, 128);
+        font-size: 13.33px;
+        font-weight: normal;
+        line-height: 16px;
+    }
+    h2{
+        color: rgba(17, 17, 17);
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 48px;
+    }
+}
+
+.nav-class{
+    font-weight: 500;
+    font-size: 19.2px;
+    line-height: 24px;
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.active{
+    color: #111111 !important;
+    border-bottom: 2px solid #111111 !important;
+}
+
+.tab-view{
+    color: #6B7280;
+    margin-right: 24px;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.choose-section{
+    border: 1px solid rgba(238, 239, 242);
+    //height: 336px;
+    width: 100%;
+    border-radius: 8px;
+    &:hover{
+        border: 2px solid rgba(182, 188, 198);
+    }
+}
+
+.section-choose{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    column-gap: 1.5rem;
+    
+}
+
+.section-content{
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+    margin-bottom: 3rem;
+    h3{
+        padding: 1rem 0;
+    }
+}
+
+.card-choose{
+    padding: 1.5rem;
+  
+    p{
+        box-sizing: border-box;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(107, 114, 128);
+    }
+}
+
+.warranty-section{
+    border: 1px solid rgba(238, 239, 242);
+    //height: 336px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover{
+        border: 2px solid rgba(182, 188, 198);
+    }
+}
+
+
+.section-specification{
+    span{
+        font-size: 14px;
+        color: rgba(17, 17, 17);
+        line-height: 20px;
+        font-weight: 500;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            border-top: 1px solid rgba(238, 239, 242);
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            align-items: center;
+        }
+    }
+}
+
+.selected{
+    border: 2px solid rgba(30, 150, 212);
+}

@@ -1,0 +1,19 @@
+
+@media screen and (max-width : 320px) {
+    app-component{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    } 
+
+    .footer{
+        .normal-flex-rcc:first-child{
+         display: none !important;
+        }
+    }
+
+
+    
+  }
+

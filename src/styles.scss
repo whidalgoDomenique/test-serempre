@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@use './assets/scss/base';
+@use './assets/scss/typography';
+@use './assets/scss/variables';
+
+// layout
+@use './assets/scss/layout/display';
+@use './assets/scss/layout/flex';
+@use './assets/scss/layout/grid';
+@use './assets/scss/layout/height';
+@use './assets/scss/layout/overflow';
+@use './assets/scss/layout/position';
+@use './assets/scss/layout/visibility';
+@use './assets/scss/layout/width';
+
+//elements
+@use './assets/scss/elements/button';
+
+// media query
+@use './assets/scss/mediaquery/mediaquery';
